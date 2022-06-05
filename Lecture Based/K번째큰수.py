@@ -12,5 +12,4 @@ for tmp in case:     # 각 조합의 합을 result에 저장
 
 result.sort(reverse=True)   # 큰 수부터 정렬
 
-print(result)
 print(result[K-1])

@@ -1,12 +1,14 @@
-n = int(sys.stdin.readline())
-lst = []
+N = int(input())
+#중복제외: set
+w = set(input()for _ in range(N))
+words = list(w)
 
-for i in range(n):
-    lst.append(sys.stdin.readline().strip())
-set_lst = set(lst)
-lst = list(set_lst)
-lst.sort()
-lst.sort(key = len)
+# 사전순으로 정렬
+words.sort()
+# print(words)
+# 길이순으로 정렬
+words.sort(key=len)
+# print(words)
 
-for i in lst:
-    print(i)
+for i in range(len(words)):
+    print(words[i])
